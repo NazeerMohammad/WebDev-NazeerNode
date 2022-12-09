@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NAZEER MOHAMMAD</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            MY PAGE
+        </nav>
+    
+        <main>
+            Maininfo
+        </main>
+
+        <div id="aboutMeContent">
+            <h1 class="title">02. About Me</h1>  
+            <p>SHAIK MOHAMMAD NAZEER SAHEB<br>
+                SQL,PYTHON<br>
+                DATA ANALYST @ MARKSINFOTECH<br>
+                Interest in learning more<br>
+                PURSUING MASTERS @ University of New Haven.</p>
+        </div>
+
+        <div id="aboutMeImg">
+            <img src="https://cdn.pixabay.com/photo/2015/11/06/11/43/businessman-1026415_960_720.jpg" alt="Image">
+        </div>
+
+        <div class="education">
+            <details>
+                <summary>
+                    
+                </summary>
+            </details>
+        </div>
+
+        <div class="experience">
+            Experience
+            <p>
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+            </p>
+          
+        </div>
+
+        <div class="project">
+            Project
+            <P>
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+            </P>
+        </div>
+
+        <div class="blogs">
+            blogs
+            <p>
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+            </p>
+        </div>
+
+        <div class="technologiesknown">
+            technologiesknown
+            <p>
+                It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+            </p>
+        </div>
+
+        <footer>
+            footer
+
+        </footer>
+    </div>
+    
+</body>
+<style>
+    
+.container{
+    height:100vh;
+    width:100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "main main main main"
+    "aboutMeContent aboutMeContent aboutMeImg aboutMeImg"
+    "education education education education"
+    "experience experience experience experience"
+    "project project project project"
+    "blogs blogs blogs blogs"
+    "technologiesknown technologiesknown technologiesknown technologiesknown"
+    "footer footer footer footer";
+    gap: 0.2px;
+
+}
+
+.title{
+    font-size: 1.75em;
+}
+
+nav{
+    background-color: #a9696e;
+    grid-area: nav;
+}
+
+main{
+    background-color: #a59aa1;
+    grid-area: main;
+}
+
+#aboutMeContent{
+    background-color: #5251ab;
+    padding: 50px;
+    text-align: left;
+    text-align: justify;
+    grid-area: aboutMeContent;
+
+}
+
+#aboutMeImg{
+    background-color: #4bb465;
+    grid-area: aboutMeImg;
+}
+
+#aboutMeImg img{
+    max-height: 300px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.education{
+    background-color: rgb(186, 169, 74);
+    grid-area: education;
+}
+
+.experience{
+    background-color: #6c222d;
+    grid-area: experience;
+}
+
+.project{
+    background-color: #69594d;
+    grid-area: project;
+}
+
+.blogs{
+    background-color: #d9d1cf;
+    grid-area: blogs;
+}
+
+.technologiesknown{
+    background-color: #4d1b2376;
+    grid-area: technologiesknown;
+}
+
+footer{
+    background-color: #a5698f;
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width: 500px){
+
+    .container{
+        overflow:hidden !important;
+        width:100%;
+        grid-template-rows: 0.5fr 1.2fr 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "aboutMeContent"
+        "aboutMeImg"
+        "education"
+        "experience"
+        "project"
+        "blogs"
+        "technologiesknown"
+        "footer";
+        gap:0.2em;
+    }
+
+}
+
+</style>
+</html>
